@@ -1,0 +1,26 @@
+{
+    "resourceType": "RelatedPerson",
+    "id": "RelatedPersonTCCS",
+    "meta": {
+      "profile": ["https://ehr.testing.p5.pt/api/fhir/StructureDefinition/RelatedPersonTCCS"]
+    },
+    "name": {
+        "family": "Adams",
+        "given": ["George"]
+    },
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "+351999777777"
+      }
+    ],
+    "extension": [
+      {
+        "url": "https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientIdentifier",
+        "valueReference": {
+          "reference": "Patient/PatientTCCS"
+        }
+      }
+    ]
+  }
+  
