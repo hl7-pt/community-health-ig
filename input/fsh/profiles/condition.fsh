@@ -29,4 +29,4 @@ Alias: $translationExtension = http://hl7.org/fhir/StructureDefinition/translati
 
 Alias: $snomedCTVS = http://snomed.info/sct
 Alias: $icd10VS = http://hl7.org/fhir/sid/icd-10
-Alias: $icp2VS = http://ehr.p5/terminology/icpc2
+Alias: $icp2VS = http://ehr.p5.pt/terminology/icpc2

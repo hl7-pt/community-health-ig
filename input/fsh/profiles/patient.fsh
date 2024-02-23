@@ -11,4 +11,4 @@ In healthcare, Patient refers to an individual, and specific demographic informa
     HealthcareNumber 0..1 MS
 * identifier[HealthcareNumber].system = $FHIRP5
 
-Alias: $FHIRP5 = https://ehr.testing.p5.pt/api/fhir
+Alias: $FHIRP5 = https://ehr.p5.pt/api/fhir
