@@ -1,0 +1,32 @@
+{
+    "resourceType": "Patient",
+    "id": "PatientTCCS1",
+    "meta": {
+      "profile": ["https://ehr.testing.p5.pt/api/fhir/StructureDefinition/PatientTCCS"]
+    },
+    "identifier": [
+      {
+        "system": "https://ehr.testing.p5.pt/api/fhir",
+        "value": "87654321"
+      }
+    ],
+    "name": [
+      {
+        "family": "Smith",
+        "given": ["Jane"]
+      }
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "+351888888888"
+      },
+      {
+        "system": "email",
+        "value": "jane.smith@email.com"
+      }
+    ],
+    "gender": "female",
+    "birthDate": "2010-05-15"
+  }
+  

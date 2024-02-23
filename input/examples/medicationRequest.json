@@ -1,0 +1,36 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "medicationRequest",
+    "status": "active",
+    "intent": "order",
+    "medicationReference": {
+      "reference": "Medication/paracetamol1000mg"
+    },
+    "subject": {
+      "reference": "Patient/PatientTCCS"
+    },
+    "authoredOn": "2024-02-11T12:00:00Z",
+    "dosageInstruction": [
+      {
+        "text": "Take one tablet every 8 hours",
+        "timing": {
+          "repeat": {
+            "frequency": 3,
+            "period": 8,
+            "periodUnit": "h"
+          }
+        }
+      }
+    ],
+    "dispenseRequest": {
+      "validityPeriod": {
+        "start": "2024-02-11T12:00:00Z",
+        "end": "2024-02-14T12:00:00Z"
+      },
+      "numberOfRepeatsAllowed": 3
+    },
+    "substitution": {
+      "allowed": false
+    }
+  }
+  

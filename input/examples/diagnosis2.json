@@ -1,0 +1,60 @@
+{
+    "resourceType": "Condition",
+    "id": "ConditionTonsillitis",
+    "meta": {
+      "profile": [
+        "http://triage-counseling-clinical-system.org/fhir/StructureDefinition/Diagnosis"
+      ]
+    },
+    "identifier": [
+      {
+        "system": "http://example.org/identifiers",
+        "value": "173"
+      }
+    ],
+    "code": {
+      "coding": [
+        {
+
+            "system": "http://snomed.info/sct",
+            "code": 90176007,
+            "display": "Tonsillitis (disorder)"
+          },
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "J03",
+            "display": "Acute tonsillitis"
+          },
+          {
+            "system": "http://www.kith.no/snomed/icpc2",
+            "code": "R76",
+            "display": "Tonsillitis acute"          
+          }
+      ],
+      "text": "Tonsillitis or angina tonsillari"
+    },
+    "subject": {
+      "reference": "Patient/PatientTCCS"
+    },
+    "encounter": {
+      "reference": "Encounter/EncounterFirst"
+    },
+    "translation": [
+      {
+        "name": "Amigdalite",
+        "locale": "pt"
+      },
+      {
+        "name": "Tonsillitis or angina tonsillaris",
+        "locale": "en"
+      },
+      {
+        "name": "Nielurisatulehdus eli angiina",
+        "locale": "fi"
+      }
+    ],
+    "probability": {
+      "value": "49.74"
+    }
+  }
+  
