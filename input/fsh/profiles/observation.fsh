@@ -23,5 +23,5 @@ It is used to represent the symptoms."
 * value[x] only string
 
 Alias:  LNC = http://loinc.org
-Alias: $bodySiteVS = https://ehr.testing.p5.pt/api/fhir/ValueSet/bodySite
-Alias: $symptomsVS = https://ehr.testing.p5.pt/api/fhir/ValueSet/bodySite
+Alias: $bodySiteVS = https://ehr.p5.pt/api/fhir/ValueSet/bodySite
+Alias: $symptomsVS = https://ehr.p5.pt/api/fhir/ValueSet/bodySite
