@@ -1,0 +1,41 @@
+{
+    "resourceType": "CarePlan",
+    "id": "carePlan",
+    "status": "active",
+    "intent": "plan",
+    "subject": {
+      "reference": "Patient/PatientTCSS"
+    },
+    "encounter": {
+        "reference": "Encounter/HumanEncounter"
+    },
+    "period": {
+      "start": "2024-02-11T12:00:00Z",
+      "end": "2024-02-15T12:00:00Z"
+    },
+    "activity": [
+      {
+        "reference": {
+          "reference": "MedicationRequest/medicationRequest"
+        },
+        "detail": {
+          "status": "in-progress",
+          "description": "Take Paracetamol every 8 hours",
+          "doNotPerform": false,
+          "scheduledTiming": {
+            "repeat": {
+              "frequency": 3,
+              "period": 8,
+              "periodUnit": "h"
+            }
+          }
+        }
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/reevaluationServiceRequest"
+        }
+    }
+    ]
+  }
+  

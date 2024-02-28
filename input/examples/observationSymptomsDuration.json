@@ -1,0 +1,37 @@
+{
+    "resourceType": "Observation",
+    "id": "ObservationSymptomsDuration",
+    "meta": {
+      "profile": ["https://ehr.testing.p5.pt/api/fhir/StructureDefinition/ObservationSymptomDuration"]
+    },
+    "code": {
+      "coding": [
+        {
+          "system": "http://loinc.org",
+          "code": "64748-7",
+          "display": "Symptoms duration"
+        }
+      ],
+      "text": "Symptoms duration"
+    },
+    "valueQuantity": {
+      "value": 2,
+      "unit": "days",
+      "system": "http://unitsofmeasure.org",
+      "code": "d"
+    },
+    "bodySite": {
+      "coding": [
+        {
+          "system": "https://ehr.testing.p5.pt/api/fhir/ValueSet/bodySiteVS",
+          "code": "6",
+          "display": "Head"
+        }
+      ],
+      "text": "Head"
+    },
+    "encounter": {
+      "reference": "Encounter/EncounterFirst"
+    }
+  }
+  
