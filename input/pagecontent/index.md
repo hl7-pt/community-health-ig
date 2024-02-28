@@ -70,16 +70,16 @@ It’s worth noting that all resources are associated with the resource Patient.
 <td>Author</td>
 <td>Ana Cecília Coimbra</td>
 <td>P5</td>
-<td>cecilia.coimbra@p5.pt</td>
+<td>cecilia.coimbra [at] p5.pt</td>
 </tr><tr class="even">
 <td>Author</td>
 <td>Carlos Aldeias</td>
 <td>P5</td>
-<td>carlos.aldeiras@p5.pt</td>
+<td>carlos.aldeiras [at] p5.pt</td>
 </tr><tr class="odd">
 <td>Author</td>
 <td>Liliana Amorim</td>
 <td>P5</td>
-<td>liliana.amorim@p5.pt</td>
+<td>liliana.amorim [at] p5.pt</td>
 </tr></tbody>
 </table>
