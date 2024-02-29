@@ -178,7 +178,6 @@ menu:
   IG Home: index.html
   Background: background.html
   Specification: spec.html
-  Table of Contents: toc.html
   Artifact Index: artifacts.html			
   Downloads: downloads.html
 # The parameters property represents IG.definition.parameter. Rather
@@ -199,3 +198,8 @@ FSHOnly: false
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
 #applyExtensionMetadataToRoot: false
+
+resources:
+  CarePlan/carePlan:
+    name: CarePlan
+    description: CarePlan para e y.
