@@ -1,3 +1,6 @@
+
+### Introduction
+
 In the triage and counseling clinical application, the triage system is designed to receive input from a patient. This input is then transmitted to an artificial intelligence algorithm, which subsequently provides one or more potential diagnosis. During this initial encounter, the patient's symptoms and some demographic information are recorded.  
 
 Following that, a medical professional examines the case and evaluates the diagnosis that the AI system identified. Subsequently, the healthcare provider gets in touch with the patient to obtain more details, including frequent prescriptions, allergies, and any other relevant information required to address the issue. Following communication with the patient, a treatment plan is formulated, encompassing potential prescriptions or referrals to outpatient services, consultations, or even emergency services as deemed appropriate.
@@ -5,7 +8,7 @@ Following that, a medical professional examines the case and evaluates the diagn
 This workflow is described in Figure 1.
 
 <p><strong>Symptom Evaluator Workflow</strong></p>
-<img src="SymptomEvaluatorWorkflow.png" class="figure-img img-responsive img-rounded center-block" style="width: 80%;">
+<img src="SymptomEvaluatorWorkflow.png" class="figure-img img-responsive img-rounded center-block" style="width: 100%;">
 
 
 #### FHIR WORKFLOW
@@ -13,7 +16,7 @@ This workflow is described in Figure 1.
 In Figure 2 is represented the mapping of FHIR resources for this case scenario. The image illustrates the integration and data flow between different entities and processes in a triage system that utilizes artificial intelligence. 
 
 <p><strong>FHIR Resources Workflow</strong></p>
-<img src="FHIRWorkflow.png" class="figure-img img-responsive img-rounded center-block" style="width: 80%;">
+<img src="FHIRWorkflow.png" class="figure-img img-responsive img-rounded center-block" style="width: 100%;">
 
 In the symptom evaluator application, the triage system is designed to receive information from a patient and then process it by an artificial intelligence algorithm that provides one or more possible diagnoses. During this initial encounter, the patient’s symptoms and some demographic information are recorded as Observations and associated with a specific Encounter, referred to as the “Symptom Evaluator first interaction”. 
 
