@@ -2,9 +2,9 @@ Profile: EncounterFirst
 Parent: Encounter
 Id: EncounterFirst
 Title: "Encounter - Iteraction with the artificial intelligence algorithm"
-Description: "This profile represents the constraints applied to the Encounter resource by the Triage and Counseling Clinical System (TCCS) FHIR Implementation Guide. 
-It describes the minimum expectations for the EpisodeOfCare resource when used in the system's composition or in one of the referred resources. 
-It is used to represent the result that cames from the iteraction with the artificial inteligence algorithm."
+Description: "Este perfil representa as restrições aplicadas ao recurso Encounter pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).
+Descreve as expectativas mínimas para o recurso EpisodeOfCare quando utilizado na composição do sistema ou em um dos recursos referidos.
+É utilizado para representar o resultado proveniente da interação com o algoritmo de inteligência artificial."
 * class 1..1
   * code from ActEncounterCodeVS
   * code = #EMER
