@@ -1,14 +1,13 @@
   <blockquote class="stu-note">
-    <p>The specification herewith documented is for the time being a proof of concept specification, and may not be used for any implementation purposes. 
-    No liability can be inferred from the use or misuse of this specification, or its consequences.</p>
+    <p>A especificação aqui documentada é, para já, uma especificação de prova de conceito e não pode ser utilizada para fins de implementação. Nenhuma responsabilidade pode ser inferida do uso ou mau uso desta especificação ou suas consequências.</p>
   </blockquote>
 
 
-### Scope
+### Âmbito
 
-This publication contains the full set of specifications...
+Esta publicação contém o conjunto completo de especificações...
 
-There is also an overview of the projects and motivation for the specifications.
+Há também uma visão geral dos projetos e da motivação para as especificações.
 
 
 ### Dependencies
@@ -50,7 +49,7 @@ There is also an overview of the projects and motivation for the specifications.
 <td>Author</td>
 <td>Carlos Aldeias</td>
 <td>P5</td>
-<td>carlos.aldeiras [at] p5.pt</td>
+<td>carlos.aldeias [at] p5.pt</td>
 </tr><tr class="odd">
 <td>Author</td>
 <td>Liliana Amorim</td>

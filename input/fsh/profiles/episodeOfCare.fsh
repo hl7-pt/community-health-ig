@@ -2,7 +2,7 @@ Profile: EpisodeOfCareTCCS
 Parent: EpisodeOfCare
 Id: EpisodeOfCareTCCS
 Title: "Episode Of Care"
-Description:  "This profile represents the constraints applied to the EpisodeOfCare resource by the Triage and Counseling Clinical System (TCCS) FHIR Implementation Guide. It describes the minimum expectations for the EpisodeOfCare resource when used in the system's composition or in one of the referred resources."
+Description:  "Este perfil representa as restrições aplicadas ao recurso EpisodeOfCare pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso EpisodeOfCare quando utilizado na composição do sistema ou em um dos recursos referidos."
 * managingOrganization 1..
 * managingOrganization = Reference(P5Organization)
 * careManager only Reference(Practitioner)

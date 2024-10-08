@@ -2,7 +2,7 @@ Profile: HumanMessages
 Parent: Communication
 Id: HumanMessages
 Title: "Messages"
-Description: "This profile represents the constraints applied to the Communication resource by the Triage and Counseling Clinical System (TCCS) FHIR Implementation Guide. It describes the minimum expectations for the Communication resource when used in the system's composition or in one of the referred resources."
+Description: "Este perfil representa as restrições aplicadas ao recurso Communication pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso Communication quando utilizado na composição do sistema ou em um dos recursos referidos."
 * status = #completed
 * subject 1.. 
 * subject only Reference(PatientTCCS)

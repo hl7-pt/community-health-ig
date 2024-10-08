@@ -2,8 +2,8 @@ Profile: PatientTCCS
 Parent: Patient
 Id: PatientTCCS
 Title: "Patient (TCCS)"
-Description: "This profile represents the constraints applied to the Patient resource by the Triage and Counseling Clinical System (TCCS) FHIR Implementation Guide. It describes the minimum expectations for the Patient resource when used in the system's composition or in one of the referred resources.
-In healthcare, Patient refers to an individual, and specific demographic information must be recorded and maintained up to date."
+Description: "Este perfil representa as restrições aplicadas ao recurso Patient pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso Patient quando utilizado na composição do sistema ou em um dos recursos referidos.
+Na área da saúde, Patient refere-se a um indivíduo, e informações demográficas específicas devem ser registradas e mantidas atualizadas."
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "url"
 * identifier ^slicing.rules = #open

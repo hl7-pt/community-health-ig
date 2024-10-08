@@ -2,9 +2,9 @@ Profile: ObservationSymptomDuration
 Parent: Observation
 Id: ObservationSymptomDuration
 Title: "Observation - Symptoms Duration"
-Description: "This profile represents the constraints applied to the Observation resource by the Triage and Counseling Clinical System (TCCS) FHIR Implementation Guide. 
-It describes the minimum expectations for the Observation resource when used in the system's composition or in one of the referred resources. 
-It is used to represent the duration of symptoms and the bodySite where they are located."
+Description: "Este perfil representa as restrições aplicadas ao recurso Observation pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).
+Descreve as expectativas mínimas para o recurso Observation quando utilizado na composição do sistema ou em um dos recursos referidos.
+É utilizado para representar a duração dos sintomas e o local no corpo onde estão localizados."
 * code = LNC#64748-7
 * encounter 1..
 * value[x] ^short = "Symptoms duration"
@@ -15,9 +15,9 @@ Profile: ObservationSymptoms
 Parent: Observation
 Id: ObservationSymptoms
 Title: "Observation - Symptoms"
-Description: "This profile represents the constraints applied to the Observation resource by the Triage and Counseling Clinical System (TCCS) FHIR Implementation Guide. 
-It describes the minimum expectations for the Observation resource when used in the system's composition or in one of the referred resources. 
-It is used to represent the symptoms."
+Description: "Este perfil representa as restrições aplicadas ao recurso Observation pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS).
+Descreve as expectativas mínimas para o recurso Observation quando utilizado na composição do sistema ou em um dos recursos referidos.
+É utilizado para representar os sintomas."
 * code from $symptomsVS
 * encounter 1..
 * value[x] only string

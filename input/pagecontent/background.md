@@ -1,27 +1,25 @@
 
-### Introduction
+### Introdução
 
-In the triage and counseling clinical application, the triage system is designed to receive input from a patient. This input is then transmitted to an artificial intelligence algorithm, which subsequently provides one or more potential diagnosis. During this initial encounter, the patient's symptoms and some demographic information are recorded.  
+Na aplicação clínica de triagem e aconselhamento, o sistema de triagem é projetado para receber informações de um paciente. Essas informações são então transmitidas a um algoritmo de inteligência artificial, que posteriormente fornece um ou mais diagnósticos potenciais. Durante esse encontro inicial, os sintomas do paciente e algumas informações demográficas são registrados.
 
-Following that, a medical professional examines the case and evaluates the diagnosis that the AI system identified. Subsequently, the healthcare provider gets in touch with the patient to obtain more details, including frequent prescriptions, allergies, and any other relevant information required to address the issue. Following communication with the patient, a treatment plan is formulated, encompassing potential prescriptions or referrals to outpatient services, consultations, or even emergency services as deemed appropriate.
+Após isso, um profissional médico examina o caso e avalia o diagnóstico identificado pelo sistema de IA. Subsequentemente, o prestador de saúde entra em contato com o paciente para obter mais detalhes, incluindo prescrições frequentes, alergias e quaisquer outras informações relevantes necessárias para abordar o problema. Após a comunicação com o paciente, um plano de tratamento é formulado, abrangendo prescrições potenciais ou encaminhamentos para serviços ambulatoriais, consultas ou até mesmo serviços de emergência, conforme considerado apropriado.
 
-This workflow is described in Figure 1.
+Esse fluxo de trabalho está descrito na Figura 1.
 
-<p><strong>Symptom Evaluator Workflow</strong></p>
+<p><strong>Fluxo de Trabalho do Avaliador de Sintomas</strong></p>
 <img src="SymptomEvaluatorWorkflow.png" class="figure-img img-responsive img-rounded center-block" style="width: 100%;">
 
 
 #### FHIR WORKFLOW
 
-In Figure 2 is represented the mapping of FHIR resources for this case scenario. The image illustrates the integration and data flow between different entities and processes in a triage system that utilizes artificial intelligence. 
+Na Figura 2 está representado o mapeamento de recursos FHIR para este cenário. A imagem ilustra a integração e o fluxo de dados entre diferentes entidades e processos em um sistema de triagem que utiliza inteligência artificial.
 
 <p><strong>FHIR Resources Workflow</strong></p>
 <img src="FHIRWorkflow.png" class="figure-img img-responsive img-rounded center-block" style="width: 100%;">
 
-In the symptom evaluator application, the triage system is designed to receive information from a patient and then process it by an artificial intelligence algorithm that provides one or more possible diagnoses. During this initial encounter, the patient’s symptoms and some demographic information are recorded as Observations and associated with a specific Encounter, referred to as the “Symptom Evaluator first interaction”. 
+Na aplicação do avaliador de sintomas, o sistema de triagem é projetado para receber informações de um paciente e, em seguida, processá-las por meio de um algoritmo de inteligência artificial que fornece um ou mais diagnósticos possíveis. Durante esse encontro inicial, os sintomas do paciente e algumas informações demográficas são registrados como Observações e associados a um Encontro específico, denominado "Primeira interação do Avaliador de Sintomas".
 
-The initial diagnosis, identified by the AI algorithm and represented as a Condition, is then reviewed by a healthcare professional, depicted on the map as a Healthcare Provider. This healthcare professional assesses the diagnosis provided by the AI system and contacts the patient to delve into the medical history, requesting additional information such as frequent prescriptions, allergies, and any other relevant details, which are recorded as Observations, Medication Statements and Allergies/Intolerances.
-Based on this interaction, represented as a second Encounter ("P5 Team Interaction"), the care manager develops a Care Plan, which may include medication prescriptions (Medication Request) and referrals to outpatient services, consultations, or emergency services, as appropriate for the situation.
-The FHIR mapping facilitates the management of care episodes, represented as Care Episode, encompassing the entire patient journey from the initial interaction to the follow-up of treatment, ensuring that clinical information is shared in a structured and interoperable manner across different health information systems.
+O diagnóstico inicial, identificado pelo algoritmo de IA e representado como uma Condição, é então revisado por um profissional de saúde, representado no mapa como um Prestador de Saúde. Esse profissional de saúde avalia o diagnóstico fornecido pelo sistema de IA e contata o paciente para aprofundar a história médica, solicitando informações adicionais, como prescrições frequentes, alergias e quaisquer outros detalhes relevantes, que são registrados como Observações, Declarações de Medicamentos e Alergias/Intolerâncias. Com base nessa interação, representada como um segundo Encontro ("Interação da Equipe P5"), o gestor de cuidados desenvolve um Plano de Cuidados, que pode incluir prescrições de medicamentos (Pedido de Medicamento) e encaminhamentos para serviços ambulatoriais, consultas ou serviços de emergência, conforme apropriado para a situação. O mapeamento FHIR facilita a gestão dos episódios de cuidados, representados como Episódio de Cuidados, abrangendo toda a jornada do paciente desde a interação inicial até o acompanhamento do tratamento, garantindo que as informações clínicas sejam compartilhadas de forma estruturada e interoperável entre diferentes sistemas de informação em saúde.
 
-It’s worth noting that all resources are associated with the resource Patient. This detail was omitted in the chart only to prevent it from becoming too confusing. 
+Vale ressaltar que todos os recursos estão associados ao recurso Paciente. Esse detalhe foi omitido no gráfico apenas para evitar confusão.
