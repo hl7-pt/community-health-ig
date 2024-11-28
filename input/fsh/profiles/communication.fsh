@@ -5,9 +5,9 @@ Title: "Messages"
 Description: "Este perfil representa as restrições aplicadas ao recurso Communication pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso Communication quando utilizado na composição do sistema ou em um dos recursos referidos."
 * status = #completed
 * subject 1.. 
-* subject only Reference(PatientTCCS)
+* subject only Reference(Patient)
 * encounter 1..
-* encounter only Reference(HumanEncounter)
+* encounter only Reference(Encounter)
 * sent 1..
 * recipient 1..1 
 * recipient only Reference(Patient or RelatedPerson or Practitioner)
