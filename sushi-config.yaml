@@ -8,15 +8,15 @@
 
 
 id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example
-name: ExampleIG
-title: "HL7 PT FHIR Implementation Guide: Example IG Release 1 | STU1"
+canonical: https://hl7.pt/fhir/community-health
+url: http://hl7.pt/fhir/ImplementationGuide/hl7.fhir.pt.community-health
+name: CommunityHealthIG
+title: "HL7 PT FHIR Implementation Guide: Community Health"
 description: Example IG exercises many of the fields in a SUSHI configuration.
 status: active
 license: CC0-1.0
-date: 2020-02-26
-version: 1.0.0
+date: 2024-11-26
+version: 1.0.1
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -166,19 +166,20 @@ pages:
   index.md:
     title: Home Page   
   background.md:
-    title: Background
+    title: Introdução
   spec.md:
-    title: Specification
+    title: Especificações
   downloads.html:
     title: Downloads
   changes.html:
     title: IG Change History
 		
 menu:
-  IG Home: index.html
-  Background: background.html
-  Specification: spec.html
-  Artifact Index: artifacts.html			
+  Home: index.html
+  Indice: toc.html
+  Introdução: background.html
+  Especificações: spec.html
+  Artifactos: artifacts.html			
   Downloads: downloads.html
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -198,8 +199,3 @@ FSHOnly: false
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
 #applyExtensionMetadataToRoot: false
-
-resources:
-  CarePlan/carePlan:
-    name: CarePlan
-    description: CarePlan para e y.

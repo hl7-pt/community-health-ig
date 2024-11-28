@@ -1,9 +1,10 @@
-Profile: EpisodeOfCareTCCS
+Profile: EpisodeOfCareStandard
 Parent: EpisodeOfCare
-Id: EpisodeOfCareTCCS
+Id: episodeOfCare-standard
 Title: "Episode Of Care"
-Description:  "Este perfil representa as restrições aplicadas ao recurso EpisodeOfCare pelo Guia de Implementação FHIR do Sistema Clínico de Triagem e Aconselhamento (TCCS). Descreve as expectativas mínimas para o recurso EpisodeOfCare quando utilizado na composição do sistema ou em um dos recursos referidos."
+Description:  "
+Este perfil representa um período estruturado durante o qual um paciente recebe atendimento para um problema de saúde específico ou um conjunto de condições. Ele serve como base para organizar e vincular atividades de saúde relacionadas, como sintomas, problemas, observações e planos de cuidado."
 * managingOrganization 1..
 * managingOrganization = Reference(P5Organization)
 * careManager only Reference(Practitioner)
-* extension contains ModifierExtensionOrganization named modifierExtensionOrganization 1..1 MS
+* status from EpisodeOfCareStatusSubset (required)
