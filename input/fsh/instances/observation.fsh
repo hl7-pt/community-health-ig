@@ -65,3 +65,46 @@ Description: "An example Observation resource representing the duration and loca
 * bodySite.coding[0].system = "https://ehr.p5.pt/terminology/CodeSystem/body-silhouette"
 * bodySite.coding[0].code = #2
 * bodySite.coding[0].display = "Head"
+
+Instance: ExampleObservationNumberHealthcareVisits12Months
+InstanceOf: ObservationNumberHealthcareVisitsLast12Months
+Title: "Exemplo Observation -  Número de visitas a unidades de saúde nos últimos 12 Meses"
+Description: "Exemplo representando o número de visitas a unidades de saúde nos últimos 12 meses."
+* id = "exemplo-observation-number-healthcare-visits-last-12-months"
+* status = #registered
+* code.coding.system = "http://ehr.p5.pt/ValueSet/observation-values"
+* code.coding.code = #healthcare-visits-12-months
+* code.coding.display = "Numero de visitas a uma unidade de saude nos ultimos 12 meses"
+* subject.reference = "Patient/example"
+* effectiveDateTime = "2024-12-11"
+* valueInteger = 5
+
+Instance: ExampleObservationPregnancy
+InstanceOf: ObservationPregnancy
+Title: "Exemplo Observation - Gravidez"
+Description: "Instância de uma observação representando o estado de gravidez de uma paciente."
+* id = "exemplo-observation-pregnancy"
+* status = #registered
+* code.coding.system = "http://snomed.info/sct"
+* code.coding.code = #77386006
+* code.coding.display = "Pregnant"
+* effectiveDateTime = "2024-12-01"
+* subject = Reference(Patient/exemplo-patient-1)
+
+* component[0].code.coding.system = "http://loinc.org"
+* component[0].code.coding.code = #49051-6
+* component[0].code.coding.display = "Gestational age in weeks"
+* component[0].valueQuantity.value = 20
+* component[0].valueQuantity.unit = "weeks"
+* component[0].valueQuantity.system = "http://unitsofmeasure.org"
+* component[0].valueQuantity.code = #wk
+
+* component[1].code.coding.system = "http://loinc.org"
+* component[1].code.coding.code = #63962-5
+* component[1].code.coding.display = "Pregnancy number [PhenX]"
+* component[1].valueInteger = 2
+
+* component[2].code.coding.system = "http://loinc.org"
+* component[2].code.coding.code = #11636-8
+* component[2].code.coding.display = "Number of live births"
+* component[2].valueInteger = 1
